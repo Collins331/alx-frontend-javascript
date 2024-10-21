@@ -1,6 +1,9 @@
+/* eslint-disable guard-for-in */
+/* eslint-disable no-unused-vars */
+
 export default function createReportObject(employeesList) {
   const report = {
-    allEmployees: {...employeesList,},
+    allEmployees: { ...employeesList },
     getNumberOfDepartments(employeesList) {
       let count = 0;
       for (const key in employeesList) {
@@ -11,4 +14,4 @@ export default function createReportObject(employeesList) {
   };
 
   return report;
-};
+}
